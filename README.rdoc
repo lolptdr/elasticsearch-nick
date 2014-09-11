@@ -26,3 +26,15 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+####Notes for running:
+
+```
+~/code/mks/rails/dumblr   elasticsearch  rake -T elasticsearch
+Starting up a new ElasticSearch client with
+rake elasticsearch:import:all    # Import all indices from `app/models` (or use DIR environment variable)
+rake elasticsearch:import:model  # Import data from your model (pass name as CLASS environment variable)
+
+rake db:dump
+rake db:load
+```
